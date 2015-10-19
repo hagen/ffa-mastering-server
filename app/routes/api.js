@@ -1,5 +1,3 @@
-// load up the user model
-var SurveyRequest = require('../models/survey_requests');
 
 module.exports = function(app) {
   // middleware specific to this router

@@ -1,10 +1,7 @@
-// load up the user model
-var Person = require('../models/person');
-
 module.exports = function(app) {
   // middleware specific to this router
   app.use(function timeLog(req, res, next) {
-    console.log('SMS lib initialised', Date.now());
+    console.log('SMS lib initialised @', Date.now());
     next();
   });
 
